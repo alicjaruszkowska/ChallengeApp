@@ -14,10 +14,14 @@ if (isFemale)
     }
 
 }
-else
+else if (!isFemale)
 {
-    if (age > 18)
+    if (age < 18)
     {
         Console.WriteLine("Niepełnoletni mężczyzna");
+    }
+    else if (age > 18)
+    {
+        Console.WriteLine("Pełnoletni mężczyzna");
     }
 }
